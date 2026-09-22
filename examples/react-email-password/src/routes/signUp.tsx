@@ -98,6 +98,9 @@ export function SignUp() {
           {pending ? "Creating account…" : "Create account"}
         </button>
       </form>
+      <p>
+        Already have an account? <a href="/login">Log in</a>
+      </p>
     </>
   );
 }
