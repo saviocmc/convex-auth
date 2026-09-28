@@ -35,7 +35,7 @@ export function RequestReset() {
           setError(null);
           const result = await startPasswordRecovery({ email });
           if (result.success) {
-            setSentTo(email);
+            setSentTo(result.sentTo);
             return;
           }
           setError(() => {
